@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+.cabecalho{
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.cabecalho_menu_hamburger{
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/Menu.svg);
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container{
+    display: flexbox;
+    align-items: center;
+}
+
+.container_botao:checked~.lista_menu{
+    display: block;
+}
+.container_botao{
+    display: none;
+}
+
+.container_imagem{
+    padding: 1em;
+}
+
+.lista_menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 60hw;
+    font-weight: 700;
+}
+
+.lista_menu_titulo,.lista_menu_item{
+    padding: 1em;
+    background-color: var(--branco);
+}
+
+.lista_menu_titulo{
+    color: var(--laranja);
+}
+
+.lista_menu_link{
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+}
+
+
+
