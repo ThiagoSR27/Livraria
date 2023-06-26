@@ -18,7 +18,7 @@
 }
 
 .container{
-    display: flexbox;
+    display: flex;
     align-items: center;
 }
 
@@ -58,5 +58,58 @@
     text-transform: uppercase;
 }
 
+.container_titulo{
+    display: none;
+}
 
+.opcoes{
+    display: none;
+}
 
+@media screen and (min-width:1024px) {
+
+    .container_titulo,
+    .container_titulo-negrito{
+        font-family: var(--fonte-secundaria);
+        font-size: 30px;
+        display: block;
+    }
+
+    .container_titulo{
+       font-weight: 400; 
+    }
+
+    .container_titulo-negrito{
+        font-weight: 700 ;
+    }
+
+    .opcoes{
+        display: flex;
+    }
+
+    .opcoes_item{
+        padding: 1em;
+        text-transform: uppercase;
+    }
+
+    .opcoes_link{
+        text-decoration: none;
+        color: var(--preto);
+    }
+
+    .container_imagem-transparente{
+        display: none;
+    }
+
+    .cabecalho_menu_hamburger{
+        display: none !important;
+    }
+
+    .opcoes_menu:checked ~.lista_menu{
+        display: block;
+        width: auto;
+    }
+    .opcoes_menu{
+        display: none;
+    }
+}
