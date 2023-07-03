@@ -66,6 +66,10 @@
     display: none;
 }
 
+.container_texto{
+    display: none;
+}
+
 @media screen and (min-width:1024px) {
 
     .container_titulo,
@@ -111,5 +115,31 @@
     }
     .opcoes_menu{
         display: none;
+    }
+}
+
+@media screen and (min-width: 1728px){
+
+    .container_link{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--preto);
+    }
+
+    .container{
+        padding: 2em !important;
+    }
+    
+    .opcoes{
+        margin-right: auto;
+    }
+
+    .container_titulo{
+        display: flex;
+    }
+
+    .container_texto{
+        display: block;
     }
 }
